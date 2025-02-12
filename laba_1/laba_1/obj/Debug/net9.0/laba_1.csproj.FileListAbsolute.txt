@@ -1,0 +1,14 @@
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\bin\Debug\net9.0\laba_1.exe
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\bin\Debug\net9.0\laba_1.deps.json
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\bin\Debug\net9.0\laba_1.runtimeconfig.json
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\bin\Debug\net9.0\laba_1.dll
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\bin\Debug\net9.0\laba_1.pdb
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\laba_1.GeneratedMSBuildEditorConfig.editorconfig
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\laba_1.AssemblyInfoInputs.cache
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\laba_1.AssemblyInfo.cs
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\laba_1.csproj.CoreCompileInputs.cache
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\laba_1.dll
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\refint\laba_1.dll
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\laba_1.pdb
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\laba_1.genruntimeconfig.cache
+Z:\kawabanga\3_kurs_2_sem\programming_engineering\laba_1\laba_1\obj\Debug\net9.0\ref\laba_1.dll
