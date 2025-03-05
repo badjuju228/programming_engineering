@@ -7,6 +7,7 @@ class SnakeGame
 {
     static int width = 20;
     static int height = 10;
+    static int score = 0;
     static List<(int, int)> snake = new List<(int, int)> { (5, 5) };
     static (int, int) direction = (1, 0);
     static (int, int) food = (10, 5);
@@ -34,15 +35,21 @@ class SnakeGame
             {
                 if (x == 0 || x == width || y == 0 || y == height)
                 {
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("#");
+                    Console.ResetColor();
                 }
                 else if (snake.Contains((x, y)))
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.Write("O");
+                    Console.ResetColor();
                 }
                 else if (food == (x, y))
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write("*");
+                    Console.ResetColor();
                 }
                 else
                 {
@@ -51,6 +58,9 @@ class SnakeGame
             }
             Console.WriteLine();
         }
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"Счет: {score}");
+        Console.ResetColor();
     }
 
     static void Input()
@@ -71,7 +81,12 @@ class SnakeGame
     {
         var newHead = (snake[0].Item1 + direction.Item1, snake[0].Item2 + direction.Item2);
 
-        if (newHead.Item1 < 0 || newHead.Item1 > width || newHead.Item2 < 0 || newHead.Item2 > height || snake.Contains(newHead))
+        if (newHead.Item1 < 0) newHead.Item1 = width;
+        if (newHead.Item1 > width) newHead.Item1 = 0;
+        if (newHead.Item2 < 0) newHead.Item2 = height;
+        if (newHead.Item2 > height) newHead.Item2 = 0;
+
+        if (snake.Contains(newHead))
         {
             Console.Clear();
             Console.WriteLine("Game Over!");
@@ -79,8 +94,10 @@ class SnakeGame
         }
 
         snake.Insert(0, newHead);
+
         if (newHead == food)
         {
+            score += 1;
             food = (rand.Next(1, width - 1), rand.Next(1, height - 1));
         }
         else
@@ -88,4 +105,5 @@ class SnakeGame
             snake.RemoveAt(snake.Count - 1);
         }
     }
+
 }
